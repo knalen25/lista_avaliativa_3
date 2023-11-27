@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 void ConferePlacaDia(char placa[], char dia[]) {
-    // Verifica se a placa é válida
+    
     if ((strlen(placa) == 8 &&
          isupper(placa[0]) &&
          isupper(placa[1]) &&
@@ -23,11 +23,11 @@ void ConferePlacaDia(char placa[], char dia[]) {
          isdigit(placa[5]) &&
          isdigit(placa[6])))
     {
-        //printf("Placa válida!\n");
+        
     } 
     else {
         printf("Placa invalida\n");
-        // exit(1);  // Saia do programa se a placa não for válida
+        
     }
 
     // Verifica se o dia da semana é válido
@@ -124,7 +124,7 @@ int main() {
 
     ConferePlacaDia(placa, dia);
 
-    // Se chegou até aqui, tanto a placa quanto o dia são válidos
+    // A placa quanto o dia são válidos
     ConfereRodizio(placa, dia);
 
     return 0;
